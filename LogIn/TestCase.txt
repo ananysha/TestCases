@@ -1,0 +1,30 @@
+Test Scenrio: Login Functionality Testing
+1.TestCase: Login with valid credentials 
+    Pre Requisite:    User should be on login Page
+    Steps to Execute: Enter username "abc@gmail.com" and password "Password123"
+                      Then click on login button.
+    Expected Results: User should be able to land on Home Page of application
+    Actual Results:   User is able to login and landed on Home page.
+
+2.TestCase: Login with invalid credentials
+    Pre Requisite:    User should be on login Page
+    Steps to Execute: Enter username "abc@gmail.com" and password "Password"
+                      Then click on login button.
+    Expected Results: User should not be able to login into the application.
+    Actual Results:   User is not able to login into the application.
+    Post Requisite:   After clicking on login button error message should be popped up- "Invalid username or password".
+
+3.TestCase: Try to login by passing username only
+    Pre Requisite:    User should be on login Page
+    Steps to Execute: Enter username "abc@gmail.com" and then click on login button.
+    Expected Results: User should not be able to login into the application.
+    Actual Results:   User is not able to login into the application.
+    Post Requisite:   After clicking on login button error message should be popped up- "Please enter Password".
+
+4.TestCase: Password Case Senstivity
+    Pre Requisite:    User should be on login Page
+    Steps to Execute: Enter username "abc@gmail.com" and password "password123" 
+                      Then click on login button.
+    Expected Results: User should not be able to login into the application.
+    Actual Results:   User is not able to login into the application.
+    Post Requisite:   After clicking on login button error message should be popped up- "Invalid username or password".
