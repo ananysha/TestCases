@@ -10,9 +10,18 @@ Test Scenrio: Login Functionality Testing
     Steps to Execute: Enter username "abc@gmail.com" and password "Password123"
                       Then click on login button.
     Expected Results: User should be able to land on Home Page of application
-    Actual Results:   User is able to login and landed on Home page.
+    Actual Results:   User is able to login into the application.
+    Post Requisite:   User is on Home page of the application.
 
-3.TestCase: Login with invalid credentials
+3.TestCase: Login with valid credentials 
+    Pre Requisite:    User should be on login Page
+    Steps to Execute: Enter username "abc@gmail.com" and password "Password123"
+                      Then hitting enter key on keyboard.
+    Expected Results: User should be able to land on Home Page of application
+    Actual Results:   User is able to login into the application.
+    Post Requisite:   User is on Home page of the application.
+
+4.TestCase: Login with invalid credentials
     Pre Requisite:    User should be on login Page
     Steps to Execute: Enter username "abc@gmail.com" and password "Password"
                       Then click on login button.
@@ -20,14 +29,14 @@ Test Scenrio: Login Functionality Testing
     Actual Results:   User is not able to login into the application.
     Post Requisite:   After clicking on login button error message should be popped up- "Invalid username or password".
 
-4.TestCase: Try to login by passing username only
+5.TestCase: Try to login by passing username only
     Pre Requisite:    User should be on login Page
     Steps to Execute: Enter username "abc@gmail.com" and then click on login button.
     Expected Results: User should not be able to login into the application.
     Actual Results:   User is not able to login into the application.
     Post Requisite:   After clicking on login button error message should be popped up- "Please enter Password".
 
-5.TestCase: Password Case Senstivity
+6.TestCase: Password Case Senstivity
     Pre Requisite:    User should be on login Page
     Steps to Execute: Enter username "abc@gmail.com" and password "password123"
                       Then click on login button.
@@ -35,13 +44,20 @@ Test Scenrio: Login Functionality Testing
     Actual Results:   User is not able to login into the application.
     Post Requisite:   After clicking on login button error message should be popped up- "Invalid username or password". 
 
-6.TestCase: Forget Password 
+7.TestCase: Password Encryption
+    Pre Requisite:    User should be on login Page
+    Steps to Execute: Enter username "abc@gmail.com" and password "Password123"
+                      Then click on login button.
+    Expected Results: Password should be in encrypted form.
+    Actual Results:   Password is in encrypted form.
+    
+8.TestCase: Forget Password 
     Pre Requisite:    User should be on login Page
     Steps to Execute: User clicks on forget password link
     Expected Results: User should land on rest password page.
     Actual Results:   User should land on reset password page.
 
-7.TestCase: Verify alignment and properties of elements on UI
+9.TestCase: Verify alignment and properties of elements on UI
     Pre Requisite:    User should be on login Page.
     Steps to Execute: After landing on login Page, need to verify if all the elements are aligned properly.
                       And ensure all the properties are up to the mark as per the specifications.
