@@ -63,3 +63,43 @@ Test Scenrio: Login Functionality Testing
                       And ensure all the properties are up to the mark as per the specifications.
     Expected Results: UI elements are appearing as expected.
     Actual Results:   UI elements may or may not appear as expected.
+
+10.TestCase: Account Lockout on Multiple Failed Attempts
+     Pre Requisite:    User should be on login Page.
+     Steps to Execute: Repeated failed login attempts (exceeding a predefined threshold).
+     Expected Results: The system should lock the user's account temporarily.
+     Actual Results:   The system should lock the user's account temporarily.
+
+11.TestCase: Remember Me Functionality
+     Pre Requisite:    User should be on login Page.
+     Steps to Execute: Checking the "Remember Me" option during login.
+     Expected Results: The system should remember the user's session and automatically log them in on subsequent visits.
+     Actual Results:   The system should remember the user's session and automatically log them in on subsequent visits. 
+
+12.TestCase: Session Management
+     Pre Requisite:    User should be on login Page.
+     Steps to Execute: Logging in and then logging out from the application.
+     Expected Results: The system should properly terminate the user's session and redirect them to the login page again.
+     Actual Results: The system should properly terminate the user's session and redirect them to the login page again.
+
+13.TestCase: Account Inactivity Timeout
+     Pre Requisite:    User should be on login Page.
+     Steps to Execute: Leaving the login page idle for a specified period of time.
+     Expected Results: The system should log the user out due to inactivity and require them to log in again.
+
+14.TestCase: Login from Multiple Devices or Locations
+      Pre Requisite:    User should be on login Page.
+      Steps to Execute: Logging in from multiple devices simultaneously with the same account.
+      Expected Results: The system should handle concurrent sessions appropriately and may log out older sessions or notify the user of the active sessions.
+
+15.TestCase: Testing for CAPTCHA/ReCAPTCHA Integration:
+      Pre Requisite:    User should be on login Page.
+      Steps to Execute: Perform multiple failed login attempts.
+      Expected Results: After a certain number of failed attempts, the system should prompt the user to solve a CAPTCHA or use a reCAPTCHA
+                        to verify that they are not a bot.
+
+16.TestCase: Testing with Two-Factor Authentication (2FA):
+     Pre Requisite:    User should be on login Page.   
+     Steps to Execute: Logging in with 2FA enabled.
+     Expected Outcome: The system should require the user to enter a valid two-factor authentication code in addition to their password.
+                       Also ensure that user can't bypass the 2FA.
