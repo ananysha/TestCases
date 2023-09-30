@@ -1,13 +1,26 @@
 Test Scenario: User SignUp Functionality
 
-1.TestCase: Valid User Registration:
+1.TestCase: Valid User Registration
     Pre Requisite:    User is on application's SignUp page.
     Steps to execute: Input valid information like name, email, password and other information required.
     Expected Results: User should be able to register successfully.
     Post Requisite:   Verify that the user receives a confirmation email after successful registeration.
 
-2.TestCase: Invalid Email Format:
+2.TestCase: Invalid Email Format
     Pre Requisite:    User is on application's SignUp page.
     Steps to execute: Input invalid information like name, email, password or any other information required like missing "@" in email field.
-    Expected Results: User should not be able to register and should get an error message indicating invalid email/input format.
+    Expected Results: User should not be able to register for the application.
+    Post Requisite:   User should get an error message indicating invalid email/input format
+  
+  TestCase: Existing Email Address
+    Pre Requisite:    User is on application's SignUp page.
+    Steps to execute: User tries to register with an email address that is already in use.
+    Expected Results: User should not be able to register.
+    Post Requisite:   Verify that the system displays an error message indicating that the email is already registered.
+  
+  TestCase: Weak Password
+    Pre Requisite:    User is on application's SignUp page.
+    Steps to execute: User tries to register using weak password(e.g: less than 8 characters, no special characters, no uppercase characters).
+    Expected Results: User should not be able to register.
+    Post Requisite:   Confirm that the system prompts the user to create a stronger password and provides password strength guidelines as well.
 
