@@ -1,0 +1,13 @@
+Test Scenario: User SignUp Functionality
+
+1.TestCase: Valid User Registration:
+    Pre Requisite:    User is on application's SignUp page.
+    Steps to execute: Input valid information like name, email, password and other information required.
+    Expected Results: User should be able to register successfully.
+    Post Requisite:   Verify that the user receives a confirmation email after successful registeration.
+
+2.TestCase: Invalid Email Format:
+    Pre Requisite:    User is on application's SignUp page.
+    Steps to execute: Input invalid information like name, email, password or any other information required like missing "@" in email field.
+    Expected Results: User should not be able to register and should get an error message indicating invalid email/input format.
+
