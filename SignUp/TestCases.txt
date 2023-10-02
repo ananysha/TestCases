@@ -24,3 +24,22 @@ Test Scenario: User SignUp Functionality
     Expected Results: User should not be able to register.
     Post Requisite:   Confirm that the system prompts the user to create a stronger password and provides password strength guidelines as well.
 
+  TestCase: Password Confirmation Mismatch
+    Pre Requisite:    User is on application's SignUp page.
+    Steps to execute: Enter a password that does not match the password confirmation field.
+    Expected Results: User should not be able to register.
+    Post Requisite:   Ensure the system displays an error message indicating that the passwords do not match.
+
+  TestCase: Missing Required Fields
+    Pre Requisite:    User is on application's SignUp page.
+    Steps to execute: Submit the registration form with missing required fields (e.g: email, password,etc).
+    Expected Results: User should not be able to register.
+    Post Requisite:   Verify that the system highlights or displays error messages for the missing fields.
+
+  TestCase: Terms and Conditions Agreement accepted
+    Pre Requisite:    User is on application's SignUp page.
+    Steps to execute: Verify that there is a checkbox or button to agree to the terms and conditions is selected. 
+    Expected Results: User will be able to register for the application.
+    Post Requisite:   Application Screen displays the message. 
+
+ 
