@@ -14,7 +14,7 @@ Test Scenrio: Login Functionality Testing
     Post Requisite:   User is on Home page of the application. And next time when user will try to login into the application, users needs to fill all the 
                       details again.
 
--TestCase: Login with valid credentials 
+-TestCase: Login with valid credentials without clicking on any checkbox 
     Pre Requisite:    User should be on login Page
     Steps to Execute: Enter username "abc@gmail.com" and password "Password123" and click on login button.
     Expected Results: User should not be able to land on Home Page of application
