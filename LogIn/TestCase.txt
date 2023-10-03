@@ -5,7 +5,7 @@ Test Scenrio: Login Functionality Testing
     Expected Results: User lands on the Login Page of the application.
     Actual Results:   User lands on the LogIn page of the application.
 
--TestCase: Login with valid credentials by hitting "Enter" key on Keyboard 
+-TestCase: Login with valid credentials 
     Pre Requisite:    User should be on login Page
     Steps to Execute: Enter username "abc@gmail.com" and password "Password123"
                       Then select on the checkbox of "I'm not a robot" and click on login button.
@@ -51,7 +51,7 @@ Test Scenrio: Login Functionality Testing
     Expected Results: User should be able to land on Home Page of application with selected email.
     Actual Results:   User is able to login into the application.
     
--TestCase: Login with valid credentials 
+-TestCase: Login with valid credentials by hitting "Enter" key on keyboard
     Pre Requisite:    User should be on login Page
     Steps to Execute: Enter username "abc@gmail.com" and password "Password123"
                       Then hitting enter key on keyboard.
