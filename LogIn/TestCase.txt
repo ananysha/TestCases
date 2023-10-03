@@ -20,7 +20,7 @@ Test Scenrio: Login Functionality Testing
     Expected Results: User should not be able to land on Home Page of application
     Actual Results:   User is able to login into the application.
     
--TestCase: Login with valid credentials "Remember me" Functionality 
+-TestCase: Login with valid credentials ensuring all checkboxes are checked 
     Pre Requisite:    User should be on login Page
     Steps to Execute: Enter username "abc@gmail.com" and password "Password123"
                       Then select on the checkbox of "I'm not a robot" as well as "Remember Me". 
@@ -29,7 +29,7 @@ Test Scenrio: Login Functionality Testing
     Actual Results:   User is able to login into the application.
     Post Requisite:   Next time when user will try to login into the application. All the other fields should be automatically filled except Password.
 
--TestCase: Login with valid credentials 
+-TestCase: Login with valid credentials with "Remember Me" Functionality
     Pre Requisite:    User should be on login Page
     Steps to Execute: Enter username as "abc@gmail.com", password as "Password123", select "Remember me" checkbox and click on login button.
     Expected Results: User should not be able to land on Home Page of application
