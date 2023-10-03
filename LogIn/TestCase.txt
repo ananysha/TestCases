@@ -34,6 +34,7 @@ Test Scenrio: Login Functionality Testing
     Steps to Execute: Enter username as "abc@gmail.com", password as "Password123", select "Remember me" checkbox and click on login button.
     Expected Results: User should not be able to land on Home Page of application
     Actual Results:   User is able to login into the application.
+    Post Requisite:   Next time when user will try to login into the application. All the other fields should be automatically filled except Password.
 
 -TestCase: Login with valid credentials "Robot" Functionality 
     Pre Requisite:    User should be on login Page
@@ -47,7 +48,7 @@ Test Scenrio: Login Functionality Testing
 -TestCase: Login with Google credentials 
     Pre Requisite:    User should be on login Page
     Steps to Execute: Click on login with "Google" button. A page will pop-up for signIn with Google then select your email with which you want to logIn.
-    Expected Results: User should be able to land on Home Page of application
+    Expected Results: User should be able to land on Home Page of application with selected email.
     Actual Results:   User is able to login into the application.
     
 -TestCase: Login with valid credentials 
@@ -89,10 +90,58 @@ Test Scenrio: Login Functionality Testing
     
 -TestCase: Forget Password 
     Pre Requisite:    User should be on login Page
-    Steps to Execute: User clicks on forget password link
+    Steps to Execute: User clicks on forget password link.
     Expected Results: User should land on rest password page and expects to enter email or mobile number for password reset.
     Post Requisite:   After passing email in the password reset page and clicks on "Next" button, a pop up should appear with the message that "We have sent an 
-                      OTP on your email" for pass word reset.   
+                      OTP on your email" for password reset.
+
+-TestCase: Register Now Functionality
+    Pre Requisite:    User should be on login Page
+    Steps to Execute: User clicks on "Register now" link.
+    Expected Results: User should land on registration page and expects to enter all the required credentials.
+    Post Requisite:   After passing valid credentials and clicks on "Submit" button, OTP confirmation window should pop up for successfull registeration.
+
+-TestCase: OTP confirmation for "Register Now" Functionality through Login Page
+    Pre Requisite:    User should be on login Page
+    Steps to Execute: User clicks on "Register now" link.
+    Expected Results: User should land on registration page and expects to enter all the required credentials.
+    Post Requisite:   After passing valid credentials and clicks on "Submit" button, OTP confirmation window should pop up for successfull registeration.
+                      Pass the valid OTP and after clicking on "Continue" ensure that user is successfully logged in.
+
+-TestCase: Empty value for OTP confirmation
+    Pre Requisite:    User should be on login Page
+    Steps to Execute: User clicks on "Register now" link.
+    Expected Results: User should land on registration page and expects to enter all the required credentials.
+    Post Requisite:   After passing valid credentials and clicks on "Submit" button, OTP confirmation window should pop up for successfull registeration.
+                      Do not pass any value in the OTP field and after clicking on "Continue" ensure that user is getting warning message like- "Enter OTP".
+
+-TestCase: Invalid OTP for "Register Now" Functionality through Login Page
+    Pre Requisite:    User should be on login Page
+    Steps to Execute: User clicks on "Register now" link.
+    Expected Results: User should land on registration page and expects to enter all the required credentials.
+    Post Requisite:   After passing valid credentials and clicks on "Submit" button, OTP confirmation window should pop up for successfull registeration.
+                      Pass the invalid OTP and after clicking on "Continue" ensure that user is getting error message like- "User have entered invalid OTP".
+
+-TestCase: Invalid OTP for "Register Now" confirmation 
+    Pre Requisite:    User should be on login Page
+    Steps to Execute: User clicks on "Register now" link.
+    Expected Results: User should land on registration page and expects to enter all the required credentials.
+    Post Requisite:   After passing valid credentials and clicks on "Submit" button, OTP confirmation window should pop up for successfull registeration.
+                      Pass the invalid OTP and after getting error message like- "User have entered invalid OTP". Ensure that after clicking on "Okay" button on 
+                      OTP confirmation window, its going back to "Enter OTP" page.
+
+-TestCase: Rate limiting on OTP 
+    Pre Requisite:    User should be on login Page
+    Steps to Execute: User clicks on "Register now" link.
+    Expected Results: User should land on registration page and expects to enter all the required credentials.
+    Post Requisite:   After passing valid credentials and clicks on "Submit" button, OTP confirmation window should pop up for successfull registeration. Try to 
+                      click on "Resend OTP" button and ensure that its not exceeding rate limiting value.
+
+-TestCase: Landing on Login Page from Registeration Page again
+    Pre Requisite:    User should be on login Page
+    Steps to Execute: User clicks on "Register now" link.
+    Expected Results: User should land on registration page and expects to enter all the required credentials. Then click on "LogIn Now" button.
+    Post Requisite:   After clicking on Login button ensure that user is coming back to LogIn Page.
 
 -TestCase: Verify alignment and properties of elements on UI
     Pre Requisite:    User should be on login Page.
@@ -103,33 +152,33 @@ Test Scenrio: Login Functionality Testing
 
 -TestCase: Account Lockout on Multiple Failed Attempts
      Pre Requisite:    User should be on login Page.
-     Steps to Execute: Repeated failed login attempts (exceeding a predefined threshold).
+     Steps to Execute: Perform repeated failed login attempts exceeding a predefined threshold value to Login.
      Expected Results: The system should lock the user's account temporarily.
      Actual Results:   The system should lock the user's account temporarily.
 
-12.TestCase: Session Management
+-TestCase: Session Management
      Pre Requisite:    User should be on login Page.
      Steps to Execute: Logging in and then logging out from the application.
      Expected Results: The system should properly terminate the user's session and redirect them to the login page again.
-     Actual Results: The system should properly terminate the user's session and redirect them to the login page again.
+     Actual Results:   The system should properly terminate the user's session and redirect them to the login page again.
 
-13.TestCase: Account Inactivity Timeout
+-TestCase: Account Inactivity Timeout
      Pre Requisite:    User should be on login Page.
-     Steps to Execute: Leaving the login page idle for a specified period of time.
-     Expected Results: The system should log the user out due to inactivity and require them to log in again.
+     Steps to Execute: Leaving the login page idle for a specific period of time.
+     Expected Results: The system should LogOut the user due to inactivity.
 
-14.TestCase: Login from Multiple Devices or Locations
+-TestCase: Login from Multiple Devices or Locations
       Pre Requisite:    User should be on login Page.
       Steps to Execute: Logging in from multiple devices simultaneously with the same account.
       Expected Results: The system should handle concurrent sessions appropriately and may log out older sessions or notify the user of the active sessions.
 
-15.TestCase: Testing for CAPTCHA/ReCAPTCHA Integration:
+-TestCase: Testing for CAPTCHA/ReCAPTCHA Integration:
       Pre Requisite:    User should be on login Page.
       Steps to Execute: Perform multiple failed login attempts.
       Expected Results: After a certain number of failed attempts, the system should prompt the user to solve a CAPTCHA or use a reCAPTCHA
                         to verify that they are not a bot.
 
-16.TestCase: Testing with Two-Factor Authentication (2FA):
+-TestCase: Testing with Two-Factor Authentication (2FA):
      Pre Requisite:    User should be on login Page.   
      Steps to Execute: Logging in with 2FA enabled.
      Expected Outcome: The system should require the user to enter a valid two-factor authentication code in addition to their password.
