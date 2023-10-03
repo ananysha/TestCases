@@ -172,6 +172,16 @@ Test Scenrio: Login Functionality Testing
       Steps to Execute: Logging in from multiple devices simultaneously with the same account.
       Expected Results: The system should handle concurrent sessions appropriately and may log out older sessions or notify the user of the active sessions.
 
+-TestCase: Clicking outside the LoginPage form
+      Pre Requisite:    User should be on login Page.
+      Steps to Execute: Click anywhere outside the login Page form.
+      Expected Results: User should land on the application page again i.e "www.drishtilearningapp.com"
+
+-TestCase: Clicking on cancel button on LoginPage form
+      Pre Requisite:    User should be on login Page.
+      Steps to Execute: Click on cancel button at the top of the Login Page form.
+      Expected Results: After clicking on cancel button, user should land on application's main page. i.e "www.drishtilearningapp.com"
+
 -TestCase: Testing for CAPTCHA/ReCAPTCHA Integration:
       Pre Requisite:    User should be on login Page.
       Steps to Execute: Perform multiple failed login attempts.
