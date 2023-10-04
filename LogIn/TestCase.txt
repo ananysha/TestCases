@@ -182,6 +182,11 @@ Test Scenrio: Login Functionality Testing
       Steps to Execute: Click on cancel button at the top of the Login Page form.
       Expected Results: After clicking on cancel button, user should land on application's main page. i.e "www.drishtilearningapp.com"
 
+-TestCase: Cookies Deletion
+    Pre Requisite:    User should be on login Page.
+    Steps to Execute: Enter the valid credentials and login into the application. And once the user is logged in, then perform log out operation.
+    Expected Results: After logging out from the application, ensure that cookies are deleted so that it can't be misused.
+
 -TestCase: Testing for CAPTCHA/ReCAPTCHA Integration:
       Pre Requisite:    User should be on login Page.
       Steps to Execute: Perform multiple failed login attempts.
