@@ -1,0 +1,27 @@
+Test Scenario: Home Page Functionality
+
+-TestCase: Web application is appearing
+    Pre Requisite:    User should have the application URL
+    Steps to Execute: User should hit the following URL- "https://drishtilearningapp.com"
+    Expected Results: Once the user hit the URL, user should land on the application page. 
+
+-TestCase: Login Button appearance
+    Pre Requisite: User should be on application Page i.e "www.drishtilearningapp.com"
+    Steps To Execute: Once the user is on appl page, click on Login Button appearing at the top right corner.
+    Expected Results: User is able to click on Login Button.
+    Post Requisite: After clicking on Login Button, ensure that user is landing on Login Page of the application.
+
+-TestCase: Search Functionality with valid and invalid value
+    Pre Requisite: User should be on application Page i.e "www.drishtilearningapp.com"
+    Steps To Execute: Enter a value in search textbox
+    Expected Results: After entering value in search textbox, ensure that we are getting expected results.
+
+-TestCase: Dropdowns(Vertical, Category, Sub-Category) functionality
+    Pre Requisite: User should be on application Page i.e "www.drishtilearningapp.com"
+    Steps To Execute: User needs to click on dropdown.
+    Expected Results: Once the user clicks on dropdown, user needs to verify if you are getting the associated options to select or not and are we able to select those options. 
+
+-TestCase: Dropdown selection before selecting the first dropdown
+    Pre Requisite: User should be on application Page i.e "www.drishtilearningapp.com"
+    Steps To Execute: User needs to skip the first dropdown named "vertical" and click on dropdown named "Category".
+    Expected Results: Once the user clicks on dropdown named "Category", user needs to verify that we are not getting any options for Category dropdown. Also asked to select the first dropdown i.e "Vertical". 
