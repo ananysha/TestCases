@@ -5,6 +5,11 @@ Test Scenario: Landing Page Functionality
     Steps to Execute: User should hit the following URL- "https://drishtilearningapp.com"
     Expected Results: Once the user hit the URL, user should land on the application page.
 
+-TestCase: Title of Application
+    Pre Requisite:    User should have the application URL
+    Steps to Execute: User should hit the following URL- "https://drishtilearningapp.com"
+    Expected Results: Once the user hit the URL, ensure that title of the application is "Exam Preparation".
+
 -TestCase: Web application Responsiveness
     Pre Requisite:    User should have the application URL
     Steps to Execute: User should hit the following URL- "https://drishtilearningapp.com"
