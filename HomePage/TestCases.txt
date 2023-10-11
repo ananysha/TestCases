@@ -1,9 +1,19 @@
-Test Scenario: Home Page Functionality
+Test Scenario: Landing Page Functionality
 
 -TestCase: Web application is appearing
     Pre Requisite:    User should have the application URL
     Steps to Execute: User should hit the following URL- "https://drishtilearningapp.com"
-    Expected Results: Once the user hit the URL, user should land on the application page. 
+    Expected Results: Once the user hit the URL, user should land on the application page.
+
+-TestCase: Web application Responsiveness
+    Pre Requisite:    User should have the application URL
+    Steps to Execute: User should hit the following URL- "https://drishtilearningapp.com"
+    Expected Results: Once the user lands on the given page, confirm that its responsive and displays all the expected elements.
+
+-TestCase: Loading time of the application
+    Pre Requisite:    User should have the application URL
+    Steps to Execute: User should hit the following URL- "https://drishtilearningapp.com"
+    Expected Results: Once the user hits on the given page, make sure that the landing page is loading within the acceptable time period.
 
 -TestCase: Login Button appearance
     Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
@@ -15,8 +25,8 @@ Test Scenario: Home Page Functionality
     Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
     Steps To Execute: Once the user is on appl page, click on Login Button appearing at the top right corner.
     Expected Results: User is able to click on Login Button.
-    Post Requisite:   After clicking on Login Button, ensure that user is landing on Login Page of the application. Then once user is successfully logged in, user 
-                      should land on the same application page.
+    Post Requisite:   After clicking on Login Button, ensure that user is landing on Login Page of the application. Then once user is successfully logged in, 
+                      user should land on the same application page.
 
 -TestCase: After login functionality
     Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
@@ -32,7 +42,7 @@ Test Scenario: Home Page Functionality
 -TestCase: Logging out through dropdown functionality
     Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
     Steps To Execute: Once the user is on appl page, log in into the application. Then click on the user name dropdown and click on "Log Out".
-    Expected Results: Once the user clicks on Log Out, ensure that user lands on the TestSeries page of the application.
+    Expected Results: Once the user clicks on Log Out, ensure that user lands on the Home page of the application.
 
 -TestCase: Clickable application Icon
     Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
@@ -59,8 +69,8 @@ Test Scenario: Home Page Functionality
 -TestCase: Dropdown selection before selecting the first dropdown
     Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
     Steps To Execute: User needs to skip the first dropdown named "vertical" and click on dropdown named "Category".
-    Expected Results: Once the user clicks on dropdown named "Category", user needs to verify that we are not getting any options for Category dropdown. Also asked 
-                      to select the first dropdown i.e "Vertical". 
+    Expected Results: Once the user clicks on dropdown named "Category", user needs to verify that we are not getting any options for Category dropdown. Also 
+                      asked to select the first dropdown i.e "Vertical". 
 
 -TestCase: Hovering on courses
     Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
@@ -75,10 +85,9 @@ Test Scenario: Home Page Functionality
 -TestCase: Footer section link functionality
     Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
     Steps To Execute: Scroll the page till end then click on any link provided.
-    Expected Results: When user reaches at the end of the page, ensure that all the links provided in the footer section are working and landing on the associated 
-                      page.
+    Expected Results: When user reaches at the end of the page, ensure that no link is broken and landing on the associated page.
 
--TestCase: Footer section social media functionality
+-TestCase: Footer section social media links
     Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
     Steps To Execute: Scroll the page till end then click on any social media icon.
     Expected Results: When user reaches at the end of the page, ensure that all the social media icons provided in the footer section are working and landing on 
@@ -88,3 +97,7 @@ Test Scenario: Home Page Functionality
     Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
     Steps To Execute: Scroll the page till end then click on up arrow button
     Expected Results: When user reaches at the end of the page, ensure that after clicking on up arrow button, its navigation to the top section of the same page.
+
+-TestCase: Load testing
+    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
+    Steps To Execute: Need to check how the landing page performs under heavy traffic.
