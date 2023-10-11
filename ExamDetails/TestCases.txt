@@ -1,2 +1,82 @@
 Test Scenario: Exam Details Functionality testing
 
+-TestCase: Exam Details page is appearing
+    Pre Requisite:    User should have the application URL
+    Steps to Execute: User should hit the following URL- "https://www.drishtilearningapp.com/web/Exam_Prep/exam_detail/2556"
+    Expected Results: Once the user hit the URL, user should land on the exam details page.
+
+-TestCase: Exam Details page Responsiveness
+    Pre Requisite:    User should have the application URL
+    Steps to Execute: User should hit the following URL- "https://www.drishtilearningapp.com/web/Exam_Prep/exam_detail/2556"
+    Expected Results: Once the user lands on the given page, confirm that its responsive and displays all the expected elements.
+
+-TestCase: Loading time of the page
+    Pre Requisite:    User should have the application URL
+    Steps to Execute: User should hit the following URL- "https://www.drishtilearningapp.com/web/Exam_Prep/exam_detail/2556"
+    Expected Results: Once the user hits on the given page, make sure that the ExamDetails page is loading within the acceptable time period.
+
+-TestCase: Login Button appearance
+    Pre Requisite:    User should be on ExamDetails Page i.e "https://www.drishtilearningapp.com/web/Exam_Prep/exam_detail/2556"
+    Steps To Execute: Once the user is on ExamDetails page, click on Login Button appearing at the top right corner.
+    Expected Results: User is able to click on Login Button.
+    Post Requisite:   After clicking on Login Button, ensure that user is landing on Login Page of the application.
+
+-TestCase: Coming back to ExamDetails page after login functionality
+    Pre Requisite:    User should be on ExamDetails Page i.e "https://www.drishtilearningapp.com/web/Exam_Prep/exam_detail/2556"
+    Steps To Execute: Once the user is on appl page, click on Login Button appearing at the top right corner.
+    Expected Results: User is able to click on Login Button.
+    Post Requisite:   After clicking on Login Button, ensure that user is landing on Login Page of the application. Then once user is successfully logged in, 
+                      user should land on the same ExamDetails page.
+
+-TestCase: After login functionality
+    Pre Requisite:    User should be on ExamDetails Page i.e "https://www.drishtilearningapp.com/web/Exam_Prep/exam_detail/2556"
+    Steps To Execute: Once the user is on appl page, try to log In through the page by clicking on Log In button at top right corner.
+    Expected Results: User must come back to the appl page after successfull login.
+    Post Requisite:   A dropdown should appear with user's name at the right corner instead of Login button.
+
+-TestCase: Username dropdown functionality
+    Pre Requisite:    User should be on ExamDetails Page i.e "https://www.drishtilearningapp.com/web/Exam_Prep/exam_detail/2556"
+    Steps To Execute: Once the user is on ExamDetails page, log in into the application. Then click on the user name dropdown and click on any functionality.
+    Expected Results: Once the user clicks on dropdown, ensure that all the links are working and landing on the associated page.
+
+-TestCase: Logging out through dropdown functionality
+    Pre Requisite:    User should be on ExamDetails Page i.e "https://www.drishtilearningapp.com/web/Exam_Prep/exam_detail/2556"
+    Steps To Execute: Once the user is on ExamDetails page, log in into the application. Then click on the user name dropdown and click on "Log Out".
+    Expected Results: Once the user clicks on Log Out, ensure that user lands on the Home page of the application.
+
+-TestCase: Clickable application Icon
+    Pre Requisite:    User should be on ExamDetails Page i.e "https://www.drishtilearningapp.com/web/Exam_Prep/exam_detail/2556"
+    Steps To Execute: Once the user is on ExamDetails page, click on any of the appl icon appearing at the top left corner.
+    Expected Results: User is able to click on icon.
+    Post Requisite:   After clicking on the icon, ensure that user is landing on Home Page of the application.
+
+-TestCase: Feature Button and Sample Page Functionality
+    Pre Requisite:    User should be on ExamDetails Page i.e "https://www.drishtilearningapp.com/web/Exam_Prep/exam_detail/2556"
+    Steps To Execute: Once the user is on ExamDetails page, click on Feature/SamplePage Button 
+    Expected Results: User is able to click on Feature/SamplePage Button.
+    Post Requisite:   After clicking on Feature/SamplePage Button, ensure that the page is getting updated as per the request.
+
+-TestCase: Sample Page- PDF download Functionality without Login
+    Pre Requisite:    User should be on ExamDetails Page i.e "https://www.drishtilearningapp.com/web/Exam_Prep/exam_detail/2556"
+    Steps To Execute: Once the user is on ExamDetails page, click on SamplePage Button and try to download the PDF without Login into the application
+    Expected Results: User will not be able to download the PDF.
+    Post Requisite:   After clicking on PDF for download, ensure that its redirecting to LogIn page.
+
+
+
+
+-TestCase: Footer section link functionality
+    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
+    Steps To Execute: Scroll the page till end then click on any link provided.
+    Expected Results: When user reaches at the end of the page, ensure that no link is broken and landing on the associated page.
+
+-TestCase: Footer section social media links
+    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
+    Steps To Execute: Scroll the page till end then click on any social media icon.
+    Expected Results: When user reaches at the end of the page, ensure that all the social media icons provided in the footer section are working and landing on 
+                      the associated pages opened in a new tab.
+
+-TestCase: Footer section botton to top functionality
+    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
+    Steps To Execute: Scroll the page till end then click on up arrow button
+    Expected Results: When user reaches at the end of the page, ensure that after clicking on up arrow button, its navigation to the top section of the same page.
