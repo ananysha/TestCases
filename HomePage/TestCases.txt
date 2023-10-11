@@ -29,6 +29,11 @@ Test Scenario: Home Page Functionality
     Steps To Execute: Once the user is on appl page, log in into the application. Then click on the user name dropdown and click on any functionality.
     Expected Results: Once the user clicks on dropdown, ensure that all the links are working and landing on the associated page.
 
+-TestCase: Logging out through dropdown functionality
+    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
+    Steps To Execute: Once the user is on appl page, log in into the application. Then click on the user name dropdown and click on "Log Out".
+    Expected Results: Once the user clicks on Log Out, ensure that user lands on the TestSeries page of the application.
+
 -TestCase: Clickable application Icon
     Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
     Steps To Execute: Once the user is on appl page, click on any of the appl icon appearing at the top left corner.
