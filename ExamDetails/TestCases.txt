@@ -1,0 +1,2 @@
+Test Scenario: Exam Details Functionality testing
+
