@@ -1,86 +1,62 @@
-Test Scenario: Landing Page Functionality
-
--TestCase: Web application is appearing
-    Pre Requisite:    User should have the application URL
-    Steps to Execute: User should hit the following URL- "https://drishtilearningapp.com"
-    Expected Results: Once the user hit the URL, user should land on the application page.
+Test Scenario: Home Page Functionality
 
 -TestCase: Web application Responsiveness
     Pre Requisite:    User should have the application URL
-    Steps to Execute: User should hit the following URL- "https://drishtilearningapp.com"
+    Steps to Execute: User should hit the following URL- "https://www.drishtilearningapp.com/web/Home"
     Expected Results: Once the user lands on the given page, confirm that its responsive and displays all the expected elements.
 
 -TestCase: Loading time of the application
     Pre Requisite:    User should have the application URL
-    Steps to Execute: User should hit the following URL- "https://drishtilearningapp.com"
+    Steps to Execute: User should hit the following URL- "https://www.drishtilearningapp.com/web/Home"
     Expected Results: Once the user hits on the given page, make sure that the landing page is loading within the acceptable time period.
 
 -TestCase: Login Button appearance
-    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
-    Steps To Execute: Once the user is on appl page, click on Login Button appearing at the top right corner.
+    Pre Requisite:    User should be on the Home Page i.e "https://www.drishtilearningapp.com/web/Home"
+    Steps To Execute: Once the user is on Home page, click on Login Button appearing at the top right corner.
     Expected Results: User is able to click on Login Button.
     Post Requisite:   After clicking on Login Button, ensure that user is landing on Login Page of the application.
 
--TestCase: Coming back to appl page after login functionality
-    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
-    Steps To Execute: Once the user is on appl page, click on Login Button appearing at the top right corner.
+-TestCase: Reaching on Landing page after login functionality
+    Pre Requisite:    User should be on the Home Page i.e "https://www.drishtilearningapp.com/web/Home"
+    Steps To Execute: Once the user is on Home page, click on Login Button appearing at the top right corner.
     Expected Results: User is able to click on Login Button.
     Post Requisite:   After clicking on Login Button, ensure that user is landing on Login Page of the application. Then once user is successfully logged in, 
-                      user should land on the same application page.
-
--TestCase: After login functionality
-    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
-    Steps To Execute: Once the user is on appl page, try to log In through the page by clicking on Log In button at top right corner.
-    Expected Results: User must come back to the appl page after successfull login.
-    Post Requisite:   A dropdown should appear with user's name at the right corner instead of Login button.
-
--TestCase: Username dropdown functionality
-    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
-    Steps To Execute: Once the user is on appl page, log in into the application. Then click on the user name dropdown and click on any functionality.
-    Expected Results: Once the user clicks on dropdown, ensure that all the links are working and landing on the associated page.
-
--TestCase: Logging out through dropdown functionality
-    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
-    Steps To Execute: Once the user is on appl page, log in into the application. Then click on the user name dropdown and click on "Log Out".
-    Expected Results: Once the user clicks on Log Out, ensure that user lands on the Home page of the application.
+                      user should land on the Landing page i.e "https://www.drishtilearningapp.com/".
 
 -TestCase: Clickable application Icon
-    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
+    Pre Requisite:    User should be on Home Page i.e "https://www.drishtilearningapp.com/web/Home"
     Steps To Execute: Once the user is on appl page, click on any of the appl icon appearing at the top left corner.
     Expected Results: User is able to click on icon.
     Post Requisite:   After clicking on the icon, ensure that user is landing on Home Page of the application.
 
 -TestCase: Slider functionality
-    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
+    Pre Requisite:    User should be on Home Page i.e "https://www.drishtilearningapp.com/web/Home"
     Steps To Execute: Once the user is on appl page, click on either left or right arrow button present on slider.
     Expected Results: When clicks on button, make sure that slider is moving in the same direction in which we click the button.
 
--TestCase: Search Functionality with valid and invalid value
-    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
-    Steps To Execute: Enter a value in search textbox
-    Expected Results: After entering value in search textbox, ensure that we are getting expected results.
+-TestCase: "View All" Button Functionality
+    Pre Requisite:    User should be on the Home Page i.e "https://www.drishtilearningapp.com/web/Home"
+    Steps To Execute: Once the user is on Home page, click on any ViewAll Button appearing on the page.
+    Expected Results: User is able to click on ViewAll Button.
+    Post Requisite:   After clicking on ViewAll Button, ensure that user is coming back on Landing Page of the application i.e"https://www.drishtilearningapp.com/".
 
--TestCase: Dropdowns(Vertical, Category, Sub-Category) functionality
-    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
-    Steps To Execute: User needs to click on dropdown.
-    Expected Results: Once the user clicks on dropdown, user needs to verify if you are getting the associated options to select or not and are we able to select 
-                      those options. 
+-TestCase: Hovering on TestSeries/Programs
+    Pre Requisite:    User should be on Home Page i.e "https://www.drishtilearningapp.com/web/Home"
+    Steps To Execute: User hover the mouse on a particular testSeries/Program.
+    Expected Results: After keep a mouse on a testSerie/Programs, that testseries/Program should be highlighted.
 
--TestCase: Dropdown selection before selecting the first dropdown
-    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
-    Steps To Execute: User needs to skip the first dropdown named "vertical" and click on dropdown named "Category".
-    Expected Results: Once the user clicks on dropdown named "Category", user needs to verify that we are not getting any options for Category dropdown. Also 
-                      asked to select the first dropdown i.e "Vertical". 
+-TestCase: Selection of TestSeries/Programs
+    Pre Requisite:    User should be on Home Page i.e "https://www.drishtilearningapp.com/web/Home"
+    Steps To Execute: User hover the mouse on a particular testSeries/Program.
+    Expected Results: When user tries to click on testSeries/Program anywhere in that block, it should not proceed ahead with details. It should only work when 
+                      user clicks on "View Details" button.
 
--TestCase: Hovering on courses
-    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
-    Steps To Execute: User hover the mouse on a particular course.
-    Expected Results: After keep a mouse on a course, that course should be highlighted.
-
--TestCase: Selection of course
-    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
-    Steps To Execute: User hover the mouse on a particular course.
-    Expected Results: When user tries to click on any course, user must land on course page.
+-TestCase: "View Details" Button Functionality
+    Pre Requisite:    User should be on the Home Page i.e "https://www.drishtilearningapp.com/web/Home"
+    Steps To Execute: Once the user is on Home page, click on any ViewDetails Button appearing on the page.
+    Expected Results: User is able to click on ViewDetails Button.
+    Post Requisite:   After clicking on ViewDetails Button, ensure that user is landing on exam details page opened in new tab. 
+                      i.e"https://www.drishtilearningapp.com/web/Exam_Prep/exam_detail/2556" where 2556 is the program/testseries id.
 
 -TestCase: Footer section link functionality
     Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
@@ -98,6 +74,3 @@ Test Scenario: Landing Page Functionality
     Steps To Execute: Scroll the page till end then click on up arrow button
     Expected Results: When user reaches at the end of the page, ensure that after clicking on up arrow button, its navigation to the top section of the same page.
 
--TestCase: Load testing
-    Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
-    Steps To Execute: Need to check how the landing page performs under heavy traffic.
