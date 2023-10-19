@@ -62,6 +62,12 @@ Test Scenario: Exam Details Functionality testing
     Expected Results: User will not be able to download the PDF.
     Post Requisite:   After clicking on PDF for download, ensure that its redirecting to LogIn page.
 
+-TestCase: Buy Out button functionality without Login
+    Pre Requisite:    User should be on ExamDetails Page i.e "https://www.drishtilearningapp.com/web/Exam_Prep/exam_detail/2556"
+    Steps To Execute: Once the user is on ExamDetails page, click on Buy Out Button to purchase the course/testseries.
+    Expected Results: User will not be able to buy the course.
+    Post Requisite:   After clicking on Buy Out button, ensure that its redirecting to LogIn page.
+
 
 
 
