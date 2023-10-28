@@ -26,13 +26,11 @@ Test Scenario: Landing Page Functionality
     Expected Results: User is able to click on Login Button.
     Post Requisite:   After clicking on Login Button, ensure that user is landing on Login Page of the application.
 
--TestCase: Coming back to appl page after login functionality
+-TestCase: Working of Login Button
     Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
     Steps To Execute: Once the user is on appl page, click on Login Button appearing at the top right corner.
     Expected Results: User is able to click on Login Button.
-    Post Requisite:   After clicking on Login Button, ensure that user is landing on Login Page of the application. Then once user is successfully logged in, 
-                      user should land on the same application page.
-
+    
 -TestCase: After login functionality
     Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
     Steps To Execute: Once the user is on appl page, try to log In through the page by clicking on Log In button at top right corner.
