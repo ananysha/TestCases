@@ -1,0 +1,62 @@
+Test Scenario: Exam Invoice Functionality
+
+-TestCase: Exam Invoice page is appearing
+    Pre Requisite:    User should have the application URL
+    Steps To Execute: Login into the application, select the course and proceed with Buy Now button.
+    Expected Results: Once the user hit the Buy Now button, user should land on the exam invoice page.
+
+-TestCase: Try to reach Exam Invoice Page without Login
+    Pre Requisite:    User should have Exam Invoice Page URL i.e https://www.drishtilearningapp.com/index.php/web/Exam_Prep/exam_invoice/2721
+    Steps To Execute: Try to hit the URL directly.
+    Expected Results: Once the user hit the URL, user should land on Landing Page of the application.
+
+-TestCase: Exam Details page Responsiveness
+    Pre Requisite:    User should have the application URL
+    Steps To Execute: Login into the application, select the course and proceed with Buy Now button. 
+    Expected Results: Once the user hit the Buy Now button, user should land on the exam invoice page to confirm if its responsive and displays all the expected elements.
+
+-TestCase: Loading time of the page
+    Pre Requisite:    User should have the application URL
+    Steps To Execute: Login into the application, select the course and proceed with Buy Now button. 
+    Expected Results: Once the user hit the Buy Now button, make sure that the Exam Invoice page is loading within the acceptable time period.
+
+-TestCase: Username dropdown functionality
+    Pre Requisite:    User should be on Exam Invoice Page 
+    Steps To Execute: Click on the user name dropdown and click on any functionality.
+    Expected Results: Once the user clicks on dropdown, ensure that all the links are working and landing on the associated page.
+
+-TestCase: Logging out through dropdown functionality
+    Pre Requisite:    User should be on Exam Invoice Page 
+    Steps To Execute: Click on the user name dropdown and click on "Log Out".
+    Expected Results: Once the user clicks on Log Out, ensure that user lands on the Home page of the application.
+
+-TestCase: Clickable application Icon
+    Pre Requisite:    User should be on Exam Invoice Page 
+    Steps To Execute: Once the user is on Exam Invoice page, click on any of the appl icon appearing at the top left corner.
+    Expected Results: User is able to click on icon.
+    Post Requisite:   After clicking on the icon, ensure that user lands on Landing Page of the application.
+
+-TestCase: Home and Exam Preparation Link test
+    Pre Requisite:    User should be on Exam Invoice Page 
+    Steps To Execute: Once the user is on Exam Invoice page, click on either Home/Exam Preparation Link.
+    Expected Results: Ensure that on clicking the link user should land on Landing Page of the application.
+
+-TestCase: Click on selected course 
+    Pre Requisite:    User should be on Exam Invoice Page 
+    Steps To Execute: User hover the mouse on the selected course and click on it.
+    Expected Results: After clicking on selected course, it should land on Exam Details page.
+
+-TestCase: "Save Address" button functionality without filling any details
+    Pre Requisite:    User should be on Exam Invoice Page 
+    Steps To Execute: Click on "Save Address" without filling the details.
+    Expected Results: After clicking on the button, error message window should pop-up.
+
+-TestCase: Error message window pop up functionality
+    Pre Requisite:    User should be on Exam Invoice Page 
+    Steps To Execute: After clicking on "Save Address" without filling the details, a error window will pop up, click on "OK" button.
+    Expected Results: User will be able to click on "OK" button on error window.
+
+-TestCase: Coupon Functionality
+    Pre Requisite:    User should be on Exam Invoice Page 
+    Steps to Execute: Click on "Have Coupon" link
+    Expected Results: After clicking on Have Coupon, a coupon window will pop up.
