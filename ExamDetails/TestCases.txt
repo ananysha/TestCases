@@ -21,17 +21,10 @@ Test Scenario: Exam Details Functionality testing
     Expected Results: User is able to click on Login Button.
     Post Requisite:   After clicking on Login Button, ensure that user is landing on Login Page of the application.
 
--TestCase: Coming back to ExamDetails page after login functionality
-    Pre Requisite:    User should be on ExamDetails Page i.e "https://www.drishtilearningapp.com/web/Exam_Prep/exam_detail/2556"
-    Steps To Execute: Once the user is on appl page, click on Login Button appearing at the top right corner.
-    Expected Results: User is able to click on Login Button.
-    Post Requisite:   After clicking on Login Button, ensure that user is landing on Login Page of the application. Then once user is successfully logged in, 
-                      user should land on the same ExamDetails page.
-
 -TestCase: After login functionality
     Pre Requisite:    User should be on ExamDetails Page i.e "https://www.drishtilearningapp.com/web/Exam_Prep/exam_detail/2556"
-    Steps To Execute: Once the user is on appl page, try to log In through the page by clicking on Log In button at top right corner.
-    Expected Results: User must come back to the appl page after successfull login.
+    Steps To Execute: Once the user is on appl page, try to log In through the LogIn button.
+    Expected Results: User must come back to the exam details page after successfull login.
     Post Requisite:   A dropdown should appear with user's name at the right corner instead of Login button.
 
 -TestCase: Username dropdown functionality
@@ -68,8 +61,11 @@ Test Scenario: Exam Details Functionality testing
     Expected Results: User will not be able to buy the course.
     Post Requisite:   After clicking on Buy Out button, ensure that its redirecting to LogIn page.
 
-
-
+-TestCase: Buy Out button functionality with Login
+    Pre Requisite:    User should be on ExamDetails Page i.e "https://www.drishtilearningapp.com/web/Exam_Prep/exam_detail/2556"
+    Steps To Execute: Once the user is on ExamDetails page, click on Buy Out Button to purchase the course/testseries.
+    Expected Results: User should be able to buy the course.
+    Post Requisite:   After clicking on Buy Out button, ensure that its redirecting to Exam_Invoice page.
 
 -TestCase: Footer section link functionality
     Pre Requisite:    User should be on application Page i.e "www.drishtilearningapp.com"
